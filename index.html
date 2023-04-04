@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter</title>
+    <!-- EXTERNAL -->
+    <link rel="icon" class="image/png" href="images/twitter-icon.png" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+      crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
+  </head>
+  <body>
+  <body class="d-flex flex-row container-xxl">
+    <header class="sticky-top mt-0 ms-2 ms-md-0 vh-100 d-none d-sm-flex p-0 border-end border-2 border-light border-opacity-75">
+      <nav class="navbar d-flex flex-column ps-3 py-0 mt-0 me-0 me-xl-1">
+        <div class="d-flex flex-column h-100 mt-1 pb-3">
+          <div class="d-flex flex-fill flex-column h-100 pe-3 pe-xl-4">
+            <div class="">
+              <a class="btn btn-outline-light border-0 rounded-circle m-0 bi bi-twitter fs-2 text-opacity-75 text-primary"></a>
+            </div>
+            <ul class="nav justify-content-start flex-column">
+              <li class="nav-item mb-1">
+                <div class="btn btn-outline-light border-0 rounded-5">
+                  <a class="p-0 nav-link fs-3 active text-dark bi bi-house-fill" href="#">
+                    <span class="ms-3 pe-2 d-none d-xl-inline fs-5 fw-bold">Home</span>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item mb-1">
+                <li class="nav-item mb-1">
+                  <div class="btn btn-outline-light border-0 rounded-5">
+                    <a href="explore.html" class="p-0 nav-link fs-3 text-dark bi bi-hash" href="#">
+                      <span class="ms-3 pe-2 d-none d-xl-inline fs-5">Explore</span> </a>
+                  </div>
+                </li>
+              </li>
+              <li class="nav-item mb-1">
+                <div class="btn btn-outline-light border-0 rounded-5">
+                  <a href="notifications.html" class="p-0 nav-link fs-3 text-dark bi bi-bell" href="#">
+                    <span class="ms-3 pe-2 d-none d-xl-inline fs-5">Notifications</span> </a>
+                </div>
+              </li>
+              <li class="nav-item mb-1">
+                <div class="btn btn-outline-light border-0 rounded-5">
+                  <a href="messages.html" class="p-0 nav-link fs-3 text-dark bi bi-envelope"
+                    href="#">
+                    <span class="ms-3 pe-2 d-none d-xl-inline fs-5">Messages</span> </a>
+                </div>
+              </li>
+              <li class="nav-item my-1">
+                <div class="btn btn-outline-light border-0 rounded-5">
+                  <a href="Bookmarks.html" class="p-0 nav-link fs-3 text-dark bi bi-bookmark" href="#">
+                    <span class="ms-3 pe-2 d-none d-xl-inline fs-5">Bookmarks</span>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item my-1">
+                <div class="btn btn-outline-light border-0 rounded-5">
+                  <a href="profile.html" class="p-0 nav-link fs-3 text-dark bi bi-person" href="#">
+                    <span class="ms-3 pe-2 d-none d-xl-inline fs-5">Profile</span>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item my-1">
+                <div class="btn btn-outline-light border-0 rounded-5"><a
+                    class="p-0 nav-link fs-3 text-dark bi bi-three-dots"href="#">
+                    <span class="ms-3 pe-2 d-none d-xl-inline fs-5">More</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <div class="text-center flex-row mt-3">
+              <button type="button" class="bg-primary flex-fill me-xl-4 py-2 py-xl-2 px-1 px-xl-5 w-100 bg-opacity-75 rounded-5 border-0 text-white fw-bold">
+                <span class="px-5 d-none p-2 d-xl-flex fs-6 py-1 justify-content-center">Tweet</span>
+
+                <div class="d-flex d-xl-none justify-content-center">
+                <span class="rounded-circle fs-5 text-light bi bi-send"></span>
+                </div>
+              </button>
+            </div>
+          </div>
+          <section class="btn btn-outline-light border-0 rounded-5 py-1 px-1 flex-row">
+            <div class="d-flex flex-row">
+              <div class="flex-column"><img class="rounded-circle my-1"
+                  src="images/jeromelagria.jpg "
+                  width="42px"
+                  height="42px"/>
+              </div>
+              <div class="flex-column flex-fill">
+                <div class="text-dark ms-3 d-none d-xl-flex fw-bold">Jerome</div>
+                <div class="text-dark ms-3 d-none d-xl-flex fw-light opacity-75">@jeromelagria</div>
+              </div>
+              <div class="flex-column align-self-center d-none d-xl-inline p-0">
+                <div class="text-dark bi bi-three-dots me-2"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </nav>
+    </header>
+
+    <main class="d-flex flex-row me-0 me-md-5 me-lg-2">
+    <div class="firstborder"></div>
+      <section class="d-flex flex-column d-lg-block p-0 me-0 me-md-5 me-lg-0 border-opacity-75 secondborder">
+        <div class="d-flex flex-row flex-fill pt-0 py-0 m-0 sticky-top bg-white bg-opacity-75 border-bottom ">
+          <div class="d-flex w-100 px-3 m-0 blur">
+            <div class="d-sm-none align-self-center">
+              <a class="">
+                <img
+                  width="30px"
+                  height="30px"
+                  class="rounded-circle border-4"
+                  src="images/jeromelagria.jpg"
+                  alt="img"
+                />
+              </a>
+            </div>  
+            <div class="decoration-none flex-fill align-self-center">
+              <h2 href="#" class="hometext">
+              <span class="m-0 fw-bold fs-5 text-dark m-0 pt-3"style="height:60px;">Home</h2> 
+                <div class="py-2">
+              </span>
+            </div>
+              <a href="#" class="mytwitter">
+             <span class="bi bi-twitter me-3"></span>
+            </a>
+              <div class="d-flex justify-content-center"> 
+                <a href="index.html"  id="for-you-link" 
+                class="btn btn-transparent btm1 d-flex align-items-center justify-content-center flex-fill">For You</a>
+                <a href="foryou.html" id="following-link"
+                class="btn btn-transparent btm2 d-flex align-items-center justify-content-center flex-fill">Following</a>
+                
+              </div>
+            </a>
+            </div>  
+          </div>
+        </div>
+      </div>
+        <section class="py-2 d-flex flex-column border-bottom border-2 border-light d-sm-flex d-none ">
+          <div class="d-flex px-2 m-0 w-100">
+            <div class="flex-column">
+              <a class="ms-1 rounded-circle">
+                <img
+                  height="50px"
+                  width="50px"
+                  class="rounded-circle border-4"
+                  src="images/jeromelagria.jpg"
+                  alt="img"/>
+              </a>
+            </div>
+            <div
+              class="d-flex flex-column flex-fill px-2 pt-2 align-self-center"
+            >
+              <div class="d-flex w-100 align-self-center">
+                <textarea
+                  class="border-0 w-100 fs-5 text-dark pt-2 pb-0 px-2"
+                  placeholder="What's happening?"
+                  maxlength="280"
+                ></textarea>
+              </div>    
+              <div class="d-flex justify-content-center mb-1">
+                <div class="d-flex flex-fill align-self-center flex-wrap gap-0 text-primary opacity-75">
+                  <div class="btn btn-outline-light border-0 rounded-circle m-0">
+                    <a class="bi bi-image"></a>
+                  </div>
+                  <div class="btn btn-outline-light border-0 rounded-circle m-0">
+                    <a class="bi bi-filetype-gif"></a>
+                  </div>
+                  <div class="btn btn-outline-light border-0 rounded-circle m-0">
+                    <a class="bi bi-list-stars"></a>
+                  </div>
+                  <div class="btn btn-outline-light border-0 rounded-circle m-0">
+                    <a class="bi bi-emoji-smile"></a>
+                  </div>
+                  <div class="btn btn-outline-light border-0 rounded-circle m-0">
+                    <a class="bi bi-calendar2-heart"></a>
+                  </div>
+                  <div class="btn btn-outline-light border-0 rounded-circle m-0">
+                    <a class="bi bi-geo-alt opacity-75"></a>
+                  </div>
+                </div>
+                <div class="align-self-center">
+                  <button class="border-0 bg-primary bg-opacity-50 fw-bold text-light rounded-4 fs-6 py-2 px-3">
+                    Tweet
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="overall">
+        <div class="container">
+        <section class="mt-1 d-flex btn btn-outline-light border-0 rounded-0 p-0 justify-content-center"> 
+        </section>
+        <section class="d-flex btn btn-outline-light border-0 rounded-0 p-0">
+          <div
+            class="py-2 flex-column border-bottom border-2 border-light text-decoration-none">
+            <div class="d-flex flex-row px-0 m-0 w-100">
+              <div class="d-flex flex-column ms-1">
+                <div class="">
+                  <img
+                    width="50px"
+                    height="50px"
+                    class="rounded-circle border-0"
+                    src="images/ElonMusk.jpg"
+                    alt="img"/>
+                </div>
+                <div class="flex-fill w-50 border-end border-2 ms-0 my-1"></div>
+                <div class="align-self-center">
+                  <img
+                    width="30px"
+                    height="30px"
+                    class="rounded-circle border-0"
+                    src="images/ElonMusk.jpg"
+                    alt="img"/>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-fill px-3 text-start">
+                <div class="d-flex w-100">
+                  <div class="col- col-sm- pt-2  border-0 w-100 fw-bold text-dark pt-0 pb-0 ">
+                    Elon Musk
+                    <span class="bi bi-patch-check-fill text-primary opacity-75 "></span>
+                    <span class="fw-light opacity-75 ">@Elonmusk · 4h</span>
+                  </div>
+                  <div class="bi bi-three-dots opacity-75 text-dark"></div>
+                </div>
+                <div class="my-2 text-dark text-xl">
+                  Also, their feed is the Twitter equivalent of fake news. It’s unreadable.
+
+                  They would have far more real followers if they only posted their top articles. 
+
+                  Same applies to all publications.
+                </div>
+                <div class="d-flex text-nowrap mb-4  text-dark opacity-75 flex-column">
+                  <div class="d-flex w-100 sm my-2">
+                    <div class="col bi bi-chat">
+                      <span class="ps-2">2.4k</span>
+                    </div>
+                    <div class="col bi bi-arrow-repeat">
+                      <span class="ps-2">12.9k</span>
+                    </div>
+                    <div class="col bi bi-heart">
+                      <span class="ms-2">81.4k</span>
+                    </div>
+                    <div class="bi bi-upload ms-2"></div>
+                    <div class="col d-lg-flex d-none"></div>
+                  </div>
+                </div>
+                <div class="text-primary opacity-75 my-0">Show this thread</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="d-flex btn btn-outline-light border-0 rounded-0 p-0">
+          <div
+            class="py-2 flex-column border-bottom border-2 border-light text-decoration-none">
+            <div class="d-flex px-0 m-0 w-100">
+              <div class="d-flex flex-column ms-1">
+                <div class="">
+                  <img
+                    height="50px"
+                    width="50px"
+                    class="rounded-circle border-0"
+                    src="images/jeromelagria.jpg"
+                    alt="img"/>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-fill px-3 text-start">
+                <div class="d-flex w-100">
+                  <div class="border-0 w-100 fs-6 fw-bold text-dark pt-0 pb-0">
+                    Jerome
+                    <span class="d-none bi bi-patch-check-fill text-primary opacity-75"></span>
+                    <span class="fw-light opacity-75">@jeromelagria · 4h</span>
+                  </div>
+                  <div class="bi bi-three-dots opacity-75 text-dark"></div>
+                </div>
+                <div class="my-1 text-dark">
+                  What's the best anime to watch heavily in 2023? I would love to know some<br>
+                  of your answers here and suggestions. Thank you!</br>
+                </div>
+                <div
+                  class="d-flex text-nowrap mb-1 text-dark opacity-75 flex-column">
+                  <div class="d-flex w-100 sm align-self-start my-2">
+                    <div class="col bi bi-chat">
+                      <span class="ps-2">12</span>
+                    </div>
+                    <div class="col bi bi-arrow-repeat">
+                      <span class="ps-2">20</span>
+                    </div>
+                    <div class="col bi bi-heart">
+                      <span class="ms-2">57</span>
+                    </div>
+                    <div class="bi bi-upload ms-2"></div>
+                    <div class="col d-lg-flex d-none"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="d-flex btn btn-outline-light border-0 rounded-0 p-0">
+          <div class="py-2 flex-column border-bottom border-2 border-light text-decoration-none">
+            <div class="d-flex px-0 m-0 w-100">
+              <div class="d-flex flex-column ms-1">
+                <div class="">
+                  <img
+                    height="50px"
+                    width="50px"
+                    class="rounded-circle border-0"
+                    src="images/Dexerto.jpg"
+                    alt="img"/>
+                </div>
+                <div class="flex-fill w-50 border-end border-2 ms-0 my-1"></div>
+                <div class="align-self-center">
+                  <img
+                    height="30px"
+                    width="30px"
+                    class="rounded-circle border-0"
+                    src="images/Dexerto.jpg"
+                    alt="img"/>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-fill px-3 text-start">
+                <div class="d-flex w-100">
+                  <div class="border-0 w-100 fs-6 fw-bold text-dark pt-0 pb-0">
+                    Dexerto
+                    <span class="bi bi-patch-check-fill text-primary opacity-75"></span>
+                    <span class="fw-light opacity-75">@Dexerto · 10h</span>
+                  </div>
+                  <div class="bi bi-three-dots opacity-75 text-dark"></div>
+                </div>
+                <div class="my-1 text-dark">
+                  Activision has taken action by issuing DMCA takedown requests for Call of Duty content found in Fortnite Creator Mode.
+                </div>
+                <div class="d-flex text-nowrap mb-1 text-dark opacity-75 flex-column">
+                  <div class="d-flex w-100 sm align-self-start my-2">
+                    <div class="col bi bi-chat">
+                      <span class="ps-2">400</span>
+                    </div>
+                    <div class="col bi bi-arrow-repeat">
+                      <span class="ps-2">12k</span>
+                    </div>
+                    <div class="col bi bi-heart">
+                      <span class="ms-2">42.1K</span>
+                    </div>
+                    <div class="bi bi-upload ms-2"></div>
+                    <div class="col d-lg-flex d-none"></div>
+                  </div>
+                </div>
+                <div class="text-primary opacity-75 my-1">Show this thread</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="d-flex btn btn-outline-light border-0 rounded-0 p-0">
+          <div
+            class="py-2 flex-column border-bottom border-2 border-light text-decoration-none">
+            <div class="d-flex px-0 m-0 w-100">
+              <div class="d-flex flex-column ms-1">
+                <div class="">
+                  <img
+                    height="50px"
+                    width="50px"
+                    class="rounded-circle border-0"
+                    src="images/CS2.JPG"
+                    alt="img"/>
+                </div>
+                <div class="d-none flex-fill w-50 border-end border-2 ms-0 my-1"></div>
+                <div class="d-none align-self-center">
+                  <img
+                    height="30px"
+                    width="30px"
+                    class="rounded-circle border-0"
+                    src="images/CS2.JPG"
+                    alt="img"/>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-fill px-3 text-start">
+                <div class="d-flex w-100 ">
+                  <div class="border-0 w-100 fs-6 fw-bold text-dark pt-0 pb-0">
+                    CS2
+                    <span class="bi bi-patch-check-fill text-primary opacity-75"></span>
+                    <span class="fw-light opacity-75">@CounterStrike · 8h</span>
+                  </div>
+                  <div class="bi bi-three-dots opacity-75 text-dark"></div>
+                </div>
+                <div class="my-1 text-dark">
+                  PSA: Idling on official matchmaking servers in CS:GO does not increase your chances of making into the CS2 Limited Test.<br><br> 
+                  The playtime that counts was your playtime prior to the start of the Limited Test.</br>
+                </div>
+                <div class="d-flex text-nowrap mb-1 text-dark opacity-75 flex-column">
+                  <div class="d-flex w-100 sm align-self-start my-2">
+                    <div class="col bi bi-chat">
+                      <span class="ps-2">3.1K</span>
+                    </div>
+                    <div class="col bi bi-arrow-repeat">
+                      <span class="ps-2">28.7K</span>
+                    </div>
+                    <div class="col bi bi-heart">
+                      <span class="ms-2">62.2K</span>
+                    </div>
+                    <div class="bi bi-upload ms-2"></div>
+                    <div class="col d-lg-flex d-none"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="d-flex btn btn-outline-light border-0 rounded-0 p-0 ">
+          <div class="py-2 flex-column border-bottom border-2 border-light text-decoration-none">
+            <div class="d-flex px-0 m-0 w-100">
+              <div class="d-flex flex-column ms-1">
+                <div class="">
+                  <img
+                    height="50px"
+                    width="50px"
+                    class="rounded-circle border-0"
+                    src="images/ScienceMagazine.JPG"
+                    alt="img"/>
+                </div>
+                <div class="flex-fill w-50 border-end border-2 ms-0 my-1"></div>
+                <div class="align-self-center">
+                  <img
+                    height="30px"
+                    width="30px"
+                    class="rounded-circle border-0"
+                    src="images/ScienceMagazine.JPG"
+                    alt="img"/>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-fill px-3 text-start">
+                <div class="d-flex w-100">
+                  <div class="border-0 w-100 fs-6 fw-bold text-dark pt-0 pb-0">
+                    Science Magazine
+                    <span class="d-none bi bi-patch-check-fill text-primary opacity-75"></span>
+                    <span class="fw-light opacity-75">@ScienceMagazine · 12h</span>
+                  </div>
+                  <div class="bi bi-three-dots opacity-75 text-dark"></div>
+                </div>
+                <div class="my-1 text-dark">
+                  Derinkuyu, in Turkey, is an ancient underground city dating back 2500 years and
+                  extending to a depth of about 60 metres and able to support 20,000 people, and their cattle. 
+                  Subterranean cities were though to protect inhabitants from invasion, allowing thousands to live in secrecy
+                </div>
+                <div class="d-flex text-nowrap mb-1 text-dark opacity-75 flex-column">
+                  <div class="d-flex w-100 sm align-self-start my-2">
+                    <div class="col bi bi-chat">
+                      <span class="ps-2">312</span>
+                    </div>
+                    <div class="col bi bi-arrow-repeat">
+                      <span class="ps-2">4.3K</span>
+                    </div>
+                    <div class="col bi bi-heart">
+                      <span class="ms-2">8.1k</span>
+                    </div>
+                    <div class="bi bi-upload ms-2"></div>
+                    <div class="col d-lg-flex d-none"></div>
+                  </div>
+                </div>
+                <div class="text-primary opacity-75 my-1">Show this thread</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </section>
+
+        <nav class="d-flex flex-column d-sm-none fixed-bottom">
+          <div class="flex-row p-0 ms-2 bg-white me-3 mb-4 align-self-end rounded-circle">
+            <button
+              type="button"
+              class="border-0 px-3 py-2 text-white opacity-75 bg-primary rounded-circle fs-4 fw-bold bi bi-send"></button>
+          </div>
+          <div class="d-flex flex-row py-1 m-0 bg-white border-top border-2 border-light">
+            <div class="d-flex m-0 w-100 justify-content-around fs-1">
+              <a class="text-dark">
+                <span class="bi bi-house-fill"style= "font-size: 40px;"></span>
+              </a>
+              <a class="text-dark">
+                <span class="bi bi-search"style= "font-size: 40px;"></span>
+              </a>
+              <a class="text-dark">
+                <span class="bi bi-bell"style= "font-size: 40px;"></span>
+              </a>
+              <a class="text-dark">
+                <div class="bi bi-envelope"style= "font-size: 40px;"></div>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <aside class="d-none d-lg-flex flex-column w-50 pt-0 mt-0 p-0 ">
+        <div class="h-100 d-flex flex-column mx-4 py-0">
+          <div class="d-flex flex-column ">
+            <div class="d-flex flex-row mt-1 pt-2 sticky-top bg-white"> 
+              <input
+                type="search"
+                class="w-100 flex-fill d-block mb-1 py-2 px-3 border-0 rounded-5 searchtwitter"
+                placeholder="🔍︎ Search Twitter"/>
+            </div>
+            <section class="d-flex flex-row bg-light mt-3 rounded-4">
+              <div class="flex-column flex-fill">
+                <div class="d-flex mt-3 flex-row">
+                  <h5 class="flex-column flex-fill fw-bold pb-2 m-0 ps-4">
+                    Trends for you
+                  </h5>
+                  <i class="flex-column pe-4 bi bi-gear"></i>
+                </div>
+                <div
+                  class="btn btn-outline-secondary bg-opacity-10 rounded-0 border-0 py-2 px-0 d-flex flex-row">
+                  <div
+                    class="ps-4 d-flex flex-column flex-fill text-start text-dark">
+                    <div class="flex-column mb-0 text-dark opacity-50">
+                      Trending in Philippines
+                    </div>
+                    <div class="fw-bold">#ONEPIECE1080</div>
+                    <div class="d-block fw-normal text-dark opacity-50">
+                      7.978 Tweets
+                    </div>
+                  </div>
+                  <div class="me-3">
+                    <div
+                      class="btn btn-outline-light border-0 rounded-circle m-0 py-0 px-1 bi bi-three-dots text-dark opacity-75"
+                    ></div>
+                  </div>
+                </div>
+                <div class="btn btn-outline-secondary bg-opacity-10 rounded-0 border-0 py-2 px-0 d-flex flex-row">
+                  <div class="ps-4 d-flex flex-column flex-fill text-start text-dark">
+                    <div class="flex-column mb-0 text-dark opacity-50">
+                      Trending
+                    </div>
+                    <div class="fw-bold">Selena Gomez</div>
+                    <div class="d-block fw-normal text-dark opacity-50">
+                      7.608 Tweets
+                    </div>
+                  </div>
+                  <div class="me-3">
+                    <div
+                      class="btn btn-outline-light border-0 rounded-circle m-0 py-0 px-1 bi bi-three-dots text-dark opacity-75"></div>
+                  </div>
+                </div>
+                <div
+                  class="btn btn-outline-secondary rounded-0 border-0 py-2 px-0 d-flex flex-row">
+                  <div class="ps-4 d-flex flex-column flex-fill text-start text-dark">
+                    <div class="flex-column mb-0 text-dark opacity-50">
+                      Only on twitter · Trending
+                    </div>
+                    <div class="fw-bold">Tesla</div>
+                    <div class="d-block fw-normal text-dark opacity-50">
+                      5.947 Tweets
+                    </div>
+                  </div>
+                  <div class="me-3">
+                    <div
+                      class="btn btn-outline-light border-0 rounded-circle m-0 py-0 px-1 bi bi-three-dots text-dark opacity-75"></div>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex flex-row btn btn-outline-secondary rounded-bottom rounded-0 py-3 px-0 border-0">
+                  <div class="fs-6 ps-4 text-primary" href="#">Show more</div>
+                </div>
+              </div>
+            </section>
+
+            <section class="d-flex flex-row bg-light mt-3 rounded-4">
+              <div class="flex-column flex-fill">
+                <div class="d-flex mt-3 flex-row">
+                  <h5 class="flex-column flex-fill fw-bold pb-2 m-0 ps-4">
+                    Who to follow
+                  </h5>
+                </div>
+
+                <div
+                  class="btn btn-outline-secondary border-0 rounded-0 py-3 px-0 d-flex flex-row">
+                  <div class="ms-4 d-flex flex-row">
+                    <img
+                      class="rounded-circle"
+                      src="images/ElonMusk.jpg "
+                      width="50px"
+                      height="50px"/>
+                  </div>
+                  <div class="flex-row flex-fill ps-3 text-start">
+                    <div class="flex-column pt-1 mb-0 text-dark text-nowrap fw-bold">
+                      Elon Musk
+                      <span class="bi bi-patch-check-fill text-primary opacity-75">
+                      </span>
+                    </div>
+                    <div class="flex-column text-dark fw-light opacity-75">
+                      @elonmusk
+                    </div>
+                  </div>
+                  <div class="align-self-center me-3">
+                    <button
+                      type="button"
+                      class="px-3 py-1 bg-dark rounded-5 border-0 text-white fw-semibold">
+                      Follow
+                    </button>
+                  </div>
+                </div>
+
+                <div class="btn btn-outline-secondary border-0 rounded-0 py-3 px-0 d-flex flex-row">
+                  <div class="ms-4 d-flex flex-row">
+                    <img
+                      class="rounded-circle"
+                      src="images/Oda.jpg "
+                      width="50px"
+                      height="50px"/>
+                  </div>
+
+                  <div class="flex-row flex-fill ps-3 text-start">
+                    <div class="flex-column pt-1 mb-0 text-dark text-nowrap fw-bold">
+                      ONE PIECE
+                      <span
+                        class="d-none bi bi-patch-check-fill text-primary opacity-75"></span>
+                    </div>
+                    <div class="flex-column text-dark fw-light opacity-75">
+                      @Eiichiro_Staff
+                    </div>
+                  </div>
+                  <div class="align-self-center me-3">
+                    <button
+                      type="button"
+                      class="px-3 py-1 bg-dark rounded-5 border-0 text-white fw-semibold">
+                      Follow
+                    </button>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-row btn btn-outline-secondary rounded-bottom rounded-0 py-3 px-0 border-0">
+                  <div class="fs-6 ps-4 text-primary" href="#">Show more</div>
+                </div>
+              </div>
+            </section>         
+           </script>
+            <script src="script.js">          
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+            crossorigin="anonymous">
+        </script>
+
+          </body>
+            <footer>
+              <nav class="fw-light my-4 mx-2">
+                <a class="text-decoration-none text-dark opacity-50 p-2 text-nowrap" href="#">
+                  Terms of Service</a>
+                <a class="text-decoration-none text-dark opacity-50 p-2 text-nowrap" href="#">
+                  Privacy Policy</a>
+                <a class="text-decoration-none text-dark opacity-50 p-2 text-nowrap" href="#">
+                  Cookie Policy</a>
+                <a class="text-decoration-none text-dark opacity-50 p-2 text-nowrap" href="#">
+                  Ads info</a>
+                <a class="text-decoration-none text-dark opacity-50 p-2 text-nowrap" href="#">
+                  More...</a>
+                <a class="text-decoration-none text-dark opacity-50 p-2 text-nowrap" href="#">
+                  © 2023 Twitter, Inc.</a>
+              </nav>
+            </footer>
+          </div>
+        </div>
+      </aside>
+    </main>
+</html>
